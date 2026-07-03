@@ -56,8 +56,8 @@ export default function Register() {
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">Name</label>
                 <div className="relative">
-                  <FiUser className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
-                  <input {...register('name', { required: 'Name is required' })} type="text" className="input-field pl-11" placeholder="Your name" />
+                 
+                  <input {...register('name', { required: 'Name is required' })} type="text" className="input-field pl-20" placeholder="Your name" />
                 </div>
                 {errors.name && <p className="mt-1 text-xs text-red-500">{errors.name.message}</p>}
               </div>
@@ -65,8 +65,8 @@ export default function Register() {
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">Email</label>
                 <div className="relative">
-                  <FiMail className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
-                  <input {...register('email', { required: 'Email is required' })} type="email" className="input-field pl-11" placeholder="you@example.com" />
+                  
+                  <input {...register('email', { required: 'Email is required' })} type="email" className="input-field pl-20" placeholder="you@example.com" />
                 </div>
                 {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email.message}</p>}
               </div>
@@ -74,7 +74,7 @@ export default function Register() {
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">Password</label>
                 <div className="relative">
-                  <FiLock className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
+                  
                   <input {...register('password', { required: 'Password is required', minLength: { value: 6, message: 'Min 6 characters' } })} type="password" className="input-field pl-11" placeholder="Create a password" />
                 </div>
                 {errors.password && <p className="mt-1 text-xs text-red-500">{errors.password.message}</p>}

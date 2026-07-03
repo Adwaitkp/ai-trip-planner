@@ -56,7 +56,7 @@ export default function Login() {
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">Email</label>
                 <div className="relative">
-                  <FiMail className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
+                  
                   <input {...register('email', { required: 'Email is required' })} type="email" className="input-field pl-11" placeholder="you@example.com" />
                 </div>
                 {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email.message}</p>}
@@ -65,7 +65,7 @@ export default function Login() {
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">Password</label>
                 <div className="relative">
-                  <FiLock className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
+               
                   <input {...register('password', { required: 'Password is required' })} type="password" className="input-field pl-11" placeholder="Enter your password" />
                 </div>
                 {errors.password && <p className="mt-1 text-xs text-red-500">{errors.password.message}</p>}
